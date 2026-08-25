@@ -1,1 +1,222 @@
-a
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background: #111;
+    color: #f5f1e8;
+    min-height: 100vh;
+}
+
+/* =========================
+   画面共通
+========================= */
+
+.screen {
+    display: none;
+    min-height: 100vh;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.screen.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========================
+   ホーム
+========================= */
+
+#homeScreen {
+    justify-content: center;
+}
+
+.title-area {
+    margin-bottom: 60px;
+}
+
+.title-area h1 {
+    font-size: 48px;
+    letter-spacing: 8px;
+    margin-bottom: 15px;
+}
+
+.title-area p {
+    font-size: 16px;
+    color: #b9b09d;
+    letter-spacing: 3px;
+}
+
+/* =========================
+   ボタン
+========================= */
+
+button {
+    width: 280px;
+    padding: 16px;
+    margin: 8px;
+    border: 1px solid #b89b5e;
+    background: #1c1c1c;
+    color: #f5f1e8;
+    font-size: 17px;
+    font-family: inherit;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #b89b5e;
+    color: #111;
+}
+
+.home-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========================
+   見出し
+========================= */
+
+h2 {
+    font-size: 34px;
+    letter-spacing: 5px;
+    margin: 20px 0 35px;
+}
+
+h3 {
+    color: #d4b56d;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   設定
+========================= */
+
+.setting-box {
+    width: min(90%, 400px);
+    margin-bottom: 25px;
+}
+
+.setting-box label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+input {
+    width: 280px;
+    padding: 14px;
+    background: #1c1c1c;
+    border: 1px solid #777;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+    border-color: #b89b5e;
+}
+
+/* =========================
+   ルール
+========================= */
+
+.rule-content {
+    width: min(95%, 650px);
+    max-height: 65vh;
+    overflow-y: auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #333;
+    background: #181818;
+}
+
+.rule-content p {
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.important {
+    color: #d4b56d !important;
+}
+
+/* =========================
+   オンライン
+========================= */
+
+.join-area {
+    margin: 25px 0;
+    padding: 25px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.join-area p {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   待機画面
+========================= */
+
+#waitingScreen {
+    justify-content: center;
+}
+
+.room-code-box {
+    margin: 30px 0;
+}
+
+.room-code-box p {
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+#roomCodeDisplay {
+    font-size: 42px;
+    letter-spacing: 10px;
+    color: #d4b56d;
+    font-weight: bold;
+}
+
+#waitingText {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   スマホ対応
+========================= */
+
+@media (max-width: 600px) {
+
+    .title-area h1 {
+        font-size: 36px;
+        letter-spacing: 5px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    button {
+        width: 85%;
+        max-width: 300px;
+    }
+
+    .rule-content {
+        max-height: 60vh;
+    }
+}
