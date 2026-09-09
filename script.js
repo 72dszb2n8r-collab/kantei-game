@@ -4,16 +4,6 @@ const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 // ==========================================
 // Supabase
 // ==========================================
-
-const SUPABASE_URL = "https://yxqukgbubjfdxebwxnil.supabase.co";
-const SUPABASE_KEY = "sb_publishable_lUFvf5d39j8g2kgkgBaYFQ_GGr6duNS";
-
-const sb = window.supabase.createClient(
-  SUPABASE_URL,
-  SUPABASE_KEY
-);
-
-
 // ==========================================
 // 画面取得
 // ==========================================
